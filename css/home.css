@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body*/
+
+body {
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/*navegacion*/
+header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #dbcfcf;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: rgba(77, 45, 45, 0.829);
+
+}
+
+.logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(77, 45, 45, 0.829);
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: rgba(201, 138, 138, 0.829);
+}
+
+/*textos*/
+
+h1 {
+    color: rgb(65, 65, 94);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+}
+
+h2 {
+    margin: 5px;
+    color: rgb(65, 65, 94);
+    text-align: center;
+}
+
+/*section-contenido*/
+
+section,
+aside,
+footer,
+article {
+    float: left;
+    padding: 10px;
+
+}
+
+section {
+    width: 70%;
+    background-color: white;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+section p {
+    margin: auto;
+    padding: auto;
+    margin-left: 10px;
+}
+
+aside {
+    padding-top: 24px;
+    width: 19%;
+    margin-left: 8px;
+    background-color: rgba(247, 238, 238, 0.596);
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+
+article {
+    width: 22%;
+    margin-left: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: block;
+    float: left;
+
+}
+
+article img {
+    width: 270px;
+    height: 280px;
+    border-radius: 100px;
+    border-style: groove;
+    background: #2d3436;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0, 5s ease;
+
+}
+
+.article {
+    width: 90%;
+}
+
+/*footer*/
+footer {
+    font-size: 16px;
+    width: 100%;
+    background-color: #dbcfcf;
+    margin-bottom: 10px;
+    color: rgba(77, 45, 45, 0.829);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+   header {
+       width: 95%;
+       margin-left: 10px;
+   }
+   
+   a {
+       width: 23%;
+      
+   }
+
+   li {
+        width: 23%;
+}
+    ul {
+        
+        width: 23%;
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+    
+    .logo {
+        width: 80%;
+        margin-left: 18px;
+
+}
+    section {
+        width: 90%;
+    }
+
+    section img {
+        width: 100%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 25px;
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    h2, h4, h3{
+        width: 70%;
+        margin-left: 10px;
+        margin: auto;
+    }
+    
+section p {
+    width: 80%;
+        margin-left: 10px;
+}
+
+    aside {
+        width: 80%;
+        margin-top: 10px;
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .article {
+        margin-top: 10px;
+        width: 95%;
+        margin-left: 0;
+    }
+    article {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article img {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+       
+    }
+
+    .footer {
+        width: 90%;
+        margin-left: 8px;
+    }
+
+}

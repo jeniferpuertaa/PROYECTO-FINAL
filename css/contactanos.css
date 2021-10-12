@@ -1,0 +1,285 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/*NAVEGACION*/
+
+header {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #dbcfcf;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgba(77, 45, 45, 0.829);
+
+}
+
+.logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(77, 45, 45, 0.829);
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: rgba(201, 138, 138, 0.829);
+}
+
+/*article*/
+
+.article {
+    grid-column: 1/6;
+    margin-bottom:  50px;
+    background-color: white;
+    color: rgba(77, 45, 45, 0.829);
+    text-align: center;
+    float: left;
+}
+.article h1{
+    text-align: center;
+    font-size: 50px;
+}
+.article p{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.container>.header,
+.container>.footer,
+.container> div {
+    padding: 10px;
+   }
+
+.container>.header,
+.container>.footer{
+    grid-column: 1/6;
+    background-color: #dbcfcf;
+    color: black;
+}
+
+.container>.content {
+    grid-row: span 2;
+}
+
+
+.content-iframe {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/6;
+    text-align: center;
+  
+    
+}
+/*footer*/
+
+.footer p {
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px;
+
+}
+.footer {
+    margin-top: 20px;
+    background-color: #dbcfcf;
+}
+
+ /*Formulario*/
+ 
+ .form-register {
+     grid-column: 2/5;
+ }
+.form-register {
+    width: 500px;
+    background: rgba(12, 6, 6, 0.281);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.form-register h4 {
+    color: rgba(77, 45, 45, 0.829);
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls {
+    width: 100%;
+    background-color: #fcf8f8d0;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-family: Calibri;
+    border: 1px solid #191970
+}
+.controls1 {
+    width: 100%;
+    height: 150px;
+    background-color: #fcf8f8d0;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-family: Calibri;
+    border: 1px solid #191970;
+       }
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+
+.form-register a {
+    color: lightgrey;
+    text-decoration: none;
+
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register botons {
+    width: 100%;
+    background: blue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+
+}
+
+.botons {
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(173, 173, 169);
+    font-weight: bold;
+    
+}
+
+.botons:hover {
+    color: rgb(241, 227, 227);
+    font-size: 14px;
+    background-color:rgba(143, 120, 120, 0.651);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+        grid-column: 1 / 6;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    a {
+        width: 23%;
+
+    }
+
+    li {
+        width: 23%;
+    }
+
+    ul {
+
+        width: 23%;
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 70%;
+        margin-left: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .container .content {
+        grid-column: 1/-1;
+    }
+       
+    .container .article {
+        grid-column: 1 / -1;
+    }
+
+    .container .form-register {
+        width: 80%;
+        grid-column: 1 / -1;
+    }
+
+    .container .content-iframe {
+        grid-column: 1/ -1;
+    }
+    .footer {
+        width: 100%;
+        margin-left: 8px;
+    }
+
+}
